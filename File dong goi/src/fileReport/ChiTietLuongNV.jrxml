@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ChiTietLuongNV" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="de96bb93-14e1-44a6-8b3b-f4bca2147951">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="257"/>
+	<field name="maLuong" class="java.lang.String"/>
+	<field name="maNV" class="java.lang.String"/>
+	<field name="hoVaTen" class="java.lang.String"/>
+	<field name="SDT" class="java.lang.String"/>
+	<field name="chucVu" class="java.lang.String"/>
+	<field name="luongThang" class="java.lang.String"/>
+	<field name="luongCoBan" class="java.lang.String"/>
+	<field name="soNgayNghi" class="java.lang.String"/>
+	<field name="soNgayDiLam" class="java.lang.String"/>
+	<field name="soPhepNghi" class="java.lang.String"/>
+	<field name="luongTangCa" class="java.lang.String"/>
+	<field name="phuCap" class="java.lang.String"/>
+	<field name="tongLuong" class="java.lang.String"/>
+	<field name="ngayTinhLuong" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="162" splitType="Stretch">
+			<staticText>
+				<reportElement x="24" y="0" width="104" height="20" uuid="8bbeee39-88f7-4288-872c-41d6f68898f3"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Công ty PacePro]]></text>
+			</staticText>
+			<image>
+				<reportElement x="39" y="20" width="71" height="59" uuid="9c5c6f15-419e-48cd-be47-e51c24182850"/>
+				<imageExpression><![CDATA["C:\\Users\\hoang\\Videos\\Nhom05_QuanLyLuongSP_PTUD-main\\src\\image\\icon\\logocty.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="128" y="99" width="226" height="32" uuid="a8530cf4-4835-4a6b-a790-dddaf23f494e"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHIẾU LƯƠNG THÁNG]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="414" y="10" width="133" height="20" uuid="73aac06e-63b2-4c53-b52b-a0efc33689d6"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ngayTinhLuong}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="354" y="99" width="159" height="32" uuid="ba1d46ed-f055-491b-a3a5-7858c6b9c6fa"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{luongThang}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="302" y="10" width="111" height="20" uuid="5ec91a5a-4025-40e6-97ed-bd45290be78b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ngày tính lương:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="610" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="11" width="209" height="20" uuid="38aefbe2-43a0-4269-a329-38679f2e823e"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chi tiết bảng lương nhân viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="43" width="100" height="20" uuid="1cd908aa-0af9-4183-8de6-c2be383ed9dc"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Mã lương:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="82" width="100" height="20" uuid="1f7b7bde-30b4-419d-a030-63678afe04d9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Mã nhân viên:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="150" width="100" height="20" uuid="46f6431c-c702-49c1-a6b1-9a4c6225fd7b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[SĐT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="116" width="100" height="20" uuid="80ebe82e-1d9b-4daf-a872-1f6898367afd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Họ và tên:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="185" width="100" height="20" uuid="1bbbb4df-c78f-41f4-b027-3a0845780dda"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Số ngày làm:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="219" width="100" height="20" uuid="29b7ae7e-5dcb-4e55-b901-27a74fc3e9d8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Chức vụ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="185" width="100" height="20" uuid="310ca9c8-43e9-4fdc-b17c-05dc353cb9b8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Số ngày nghỉ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="219" width="100" height="20" uuid="e59eddbf-8b74-4997-8b90-c358637f3491"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Số phép nghỉ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="252" width="100" height="20" uuid="1fa78c62-e7fc-4171-bf97-9ecca2d60b3b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Lương tăng ca:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="252" width="100" height="20" uuid="91c2c9e7-2767-44d5-a29d-d8a1707b551e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Lương cơ bản:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="291" width="100" height="20" uuid="47caf61c-b628-457c-b117-f6786aac3286"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<text><![CDATA[Phụ cấp:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="394" width="147" height="32" uuid="41702b66-6fe6-4f46-8346-c79fb2805df4"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tổng lương:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="341" width="619" height="20" uuid="e90f75d2-d80e-45e0-aff3-56aff7e5da48"/>
+				<text><![CDATA[------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="394" width="100" height="32" uuid="566b124a-bceb-49fe-ab55-01068ae2e4a9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[VND]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="253" width="33" height="19" uuid="0b0ce741-c9dc-4c0f-ac64-7e171db08caf"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[VND]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="514" y="254" width="33" height="19" uuid="465c9ac3-e085-48e2-9511-00b3297d9f21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[VND]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="292" width="33" height="19" uuid="1911b5aa-3ea2-4cb5-be8c-b3b3320a0d0e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[VND]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="149" y="43" width="264" height="20" uuid="cb94baaa-0a53-40c9-be09-32e1fc2fc0c6"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maLuong}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="82" width="264" height="20" uuid="c78790c9-4ece-417c-b3e1-44a0df5d0494"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{maNV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="116" width="264" height="20" uuid="e1e1b7cd-365c-4145-a35b-d65e7844919b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hoVaTen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="150" width="265" height="20" uuid="9b543d15-2c8a-4aef-9c1a-5a346c149d3c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SDT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="185" width="100" height="20" uuid="c52e9c6a-0399-4709-8eb1-85e2bec511c9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{soNgayNghi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="219" width="100" height="20" uuid="dfed00b2-a3d4-4f0d-9735-507678ddd4be"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{soPhepNghi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="219" width="100" height="20" uuid="fd1c5fc3-dad2-4a6a-a3e4-dff2dc1896f8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chucVu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="252" width="100" height="20" uuid="a3777fb4-2ef5-4de9-ba20-4bb5f92b334a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{luongCoBan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="252" width="100" height="20" uuid="5223b375-79b0-40dc-b8fb-1adbcc297033"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{luongTangCa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="291" width="100" height="20" uuid="40d87700-8227-4e76-bf3c-75fc50f2f193"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{phuCap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="394" width="117" height="32" uuid="c1ae8a29-f819-4a70-9410-628d13fd764b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tongLuong}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="185" width="122" height="20" uuid="0619145f-314f-4cf4-b505-c76d77096834"/>
+				<textElement>
+					<font fontName="Times New Roman" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{soNgayDiLam}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="179" y="426" width="187" height="184" uuid="c30abf6e-fffc-4002-94e4-7cfd03bb9643"/>
+				<imageExpression><![CDATA["C:\\Users\\hoang\\Videos\\Nhom05_QuanLyLuongSP_PTUD-main\\src\\image\\dauMocCTy.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="513" y="7" width="158" height="129" uuid="d9283185-f204-41be-be9c-98a733bddcd2"/>
+				<imageExpression><![CDATA["C:\\Users\\hoang\\Videos\\Nhom05_QuanLyLuongSP_PTUD-main\\src\\image\\dauMocCTy.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="513" y="76" width="158" height="129" uuid="080c359d-277f-4a4c-b699-5ee6ea52898c"/>
+				<imageExpression><![CDATA["C:\\Users\\hoang\\Videos\\Nhom05_QuanLyLuongSP_PTUD-main\\src\\image\\dauMocCTy.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="514" y="136" width="158" height="129" uuid="da5b9962-8934-4412-8fd8-7d606f41a0bc"/>
+				<imageExpression><![CDATA["C:\\Users\\hoang\\Videos\\Nhom05_QuanLyLuongSP_PTUD-main\\src\\image\\dauMocCTy.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
