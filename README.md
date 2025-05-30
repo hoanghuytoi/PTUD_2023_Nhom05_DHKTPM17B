@@ -43,4 +43,7 @@
 
 ## Demo
 ### Video demo hệ thống
-![Video demo hệ thống](https://youtu.be/iFEj--_0WXk?si=0Jr5VW-kLE6biv9L)
+![](https://youtu.be/iFEj--_0WXk?si=0Jr5VW-kLE6biv9L)
+
+### Quản lý phòng ban
+![](https://youtu.be/iFEj--_0WXk?si=0Jr5VW-kLE6biv9L)
