@@ -43,7 +43,7 @@
 
 ## Demo
 ### Video demo hệ thống
-[![Video Demo](https://img.youtube.com/vi/iFEj--_0WXk/0.jpg)](https://www.youtube.com/watch?v=iFEj--_0WXk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iFEj--_0WXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Quản lý phòng ban
 ![Quản lý phòng ban](https://github.com/hoanghuytoi/PTUD_2023_Nhom05_DHKTPM17B/blob/main/demo/1.png)
